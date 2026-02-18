@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flying Cats #11095 - FRC Team</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <a href="#" class="logo">FRC <span class="red-text">#11095</span></a>
+        
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#what-is-frc" onclick="closeMenu()">FRC?</a></li>
+                <li><a href="#about" onclick="closeMenu()" data-tr="HAKKINDA" data-en="ABOUT">HAKKINDA</a></li>
+                <li><a href="#members" onclick="closeMenu()" data-tr="EKİP" data-en="CREW">EKİP</a></li>
+                <li><a href="#sponsors" onclick="closeMenu()" data-tr="SPONSORLAR" data-en="PARTNERS">SPONSORLAR</a></li>
+                <li><a href="#contact" onclick="closeMenu()" data-tr="İLETİŞİM" data-en="CONTACT">İLETİŞİM</a></li>
+            </ul>
+            
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="tr" onclick="changeLanguage('tr')">TR</button>
+                <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+            </div>
+            
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="grid-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">EST. 2025 // GEBZE</div>
+                <h1 class="hero-title">THE FLYING <br><span class="red-text">CATS</span></h1>
+                
+                <div class="hero-tagline">
+                    <span class="red-text">>></span> 
+                    <span data-tr="GEBZE'DEN DÜNYAYA" data-en="FROM GEBZE TO THE WORLD">GEBZE'DEN DÜNYAYA</span>
+                </div>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <section id="what-is-frc" class="section-brute">
+            <div class="container">
+                <div class="brute-header center">
+                    <h2 class="section-title" data-tr="FRC NEDİR?" data-en="WHAT IS FRC?">FRC NEDİR?</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="frc-educational-grid reveal">
+                    <div class="edu-card">
+                        <i class="fas fa-brain"></i>
+                        <h3 data-tr="ZİHİN SPORU" data-en="SPORT FOR THE MIND">ZİHİN SPORU</h3>
+                        <p data-tr="Robotik yarışması değil, mühendislik disiplinlerinin (mekanik, yazılım, elektronik) birleşimidir." 
+                           data-en="Not just a robotics competition, but a combination of engineering disciplines (mech, soft, elec).">
+                           Robotik yarışması değil, mühendislik disiplinlerinin birleşimidir.
+                        </p>
+                    </div>
+                    <div class="edu-card">
+                        <i class="fas fa-hammer"></i>
+                        <h3 data-tr="GERÇEK MÜHENDİSLİK" data-en="REAL ENGINEERING">GERÇEK MÜHENDİSLİK</h3>
+                        <p data-tr="55kg ağırlığında endüstriyel robotlar inşa ediyoruz. Kısıtlı zaman ve kaynakla proje yönetiyoruz." 
+                           data-en="We build 120lb industrial robots. We manage projects with limited time and resources.">
+                           55kg ağırlığında endüstriyel robotlar inşa ediyoruz. Kısıtlı zaman ve kaynakla proje yönetiyoruz.
+                        </p>
+                    </div>
+                    <div class="edu-card">
+                        <i class="fas fa-users"></i>
+                        <h3 data-tr="DUYARLI PROFESYONELLİK" data-en="GRACIOUS PROFESSIONALISM">DUYARLI PROFESYONELLİK</h3>
+                        <p data-tr="Kıyasıya rekabet ederken birbirimize yardım ederiz. Kazanmak kadar nasıl kazandığımız da önemlidir." 
+                           data-en="We help each other while competing fiercely. How we win is as important as winning.">
+                           Kıyasıya rekabet ederken birbirimize yardım ederiz. Kazanmak kadar nasıl kazandığımız da önemlidir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-brute-light">
+            <div class="container">
+                <div class="split-layout reveal">
+                    <div class="about-text">
+                        <h2 class="section-title-left">THE FLYING CATS</h2>
+                        <h3 class="subtitle-red" data-tr="BİZ KİMİZ?" data-en="WHO WE ARE">BİZ KİMİZ?</h3>
+                        <p class="brute-text" data-tr="Gebze 23 Nisan Bilim ve Sanat Merkezi'nin resmi robotik takımı. 2025 sezonunda 'Çaylak' (Rookie) olarak sahaya çıkıyoruz." 
+                           data-en="The official robotics team of Gebze 23 Nisan Science and Art Center. We enter the field as a 'Rookie' team in the 2025 season.">
+                           Gebze 23 Nisan Bilim ve Sanat Merkezi'nin resmi robotik takımı. 2025 sezonunda 'Çaylak' (Rookie) olarak sahaya çıkıyoruz.
+                        </p>
+                        <br>
+                        <h3 class="subtitle-red" data-tr="MİSYON" data-en="MISSION">MİSYON</h3>
+                        <p class="brute-text" data-tr="Sadece robot yapmak değil; sürdürülebilir bir mühendislik kültürü oluşturmak." 
+                           data-en="Not just building robots, but building a sustainable engineering culture.">
+                           Sadece robot yapmak değil; sürdürülebilir bir mühendislik kültürü oluşturmak.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <div class="tech-placeholder">
+                            <span>TEAM PHOTO PENDING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="section-members">
+            <div class="container">
+                <div class="brute-header center">
+                    <h2 class="section-title" data-tr="EKİP" data-en="THE CREW">EKİP</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="member-filters">
+                    <button class="filter-btn active" onclick="showTeamCategory('mekanik')">MEKANİK</button>
+                    <button class="filter-btn" onclick="showTeamCategory('programlama')">YAZILIM</button>
+                    <button class="filter-btn" onclick="showTeamCategory('elektronik')">ELEKTRONİK</button>
+                    <button class="filter-btn" onclick="showTeamCategory('pr')">PR & MEDIA</button>
+                </div>
+
+                <div id="mekanik" class="members-grid active">
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/mda.jpeg" alt="Mert Demir Abdullahoğlu">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mert Demir Abdullahoğlu</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/oakca.jpeg" alt="Ömer Faruk Akca">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ömer Faruk Akca</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/aozkan.jpeg" alt="Ayaz Çınar Özkan" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ayaz Çınar Özkan</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/ratalay.jpeg" alt="Rodin Barkın Atalay" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Rodin Barkın Atalay</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/hat.jpeg" alt="Hakan Atasoy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Hakan Atasoy</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/sym.jpeg" alt="Yusuf İnci">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sami Yusuf İnci</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/makgun.jpeg" alt="Hakan Atasoy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mustafa Akgün</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/oka.jpeg" alt="Hakan Atasoy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ömer Kayra Arlı</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/kcomak.jpeg" alt="Hakan Atasoy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Kaan Çomak</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/default-profile.png" alt="Hakan Atasoy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mehmet Arda Çölgeçen</h3>
+                            <span class="role-badge">MEKANİK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="programlama" class="members-grid">
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/odolmenc.jpeg" alt="Ulaş Eymen Kayımtu">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ömer Dolmenç</h3>
+                            <span class="role-badge">YAZILIM KAPTAN</span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/default-profile.png" alt="Ulaş Eymen Kayımtu">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ulaş Eymen Kayımtu</h3>
+                            <span class="role-badge">YAZILIM    </span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/rvatansever.jpeg" alt="Rüzgar Vatansever" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Rüzgar Vatansever</h3>
+                            <span class="role-badge">YAZILIM</span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/demirtas.jpeg" alt="Rüzgar Vatansever" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Efehan Kamil Demirtaş</h3>
+                            <span class="role-badge">YAZILIM</span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/okahyaoglu.jpeg" alt="Ömer Faruk Kahyaoğlu" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ömer Faruk Kahyaoğlu</h3>
+                            <span class="role-badge">YAZILIM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elektronik" class="members-grid">
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/bgultekin.jpeg" alt="Batuhan Melik Gültekin" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Batuhan Melik Gültekin</h3>
+                            <span class="role-badge">KAPTAN</span>
+                        </div>
+                    </div>
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/default-profile.png" alt="Mustafa Akgün">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mustafa Akgün</h3>
+                            <span class="role-badge">ELEKTRONİK KAPTAN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pr" class="members-grid">
+                    <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/akarakaya.jpeg" alt="Asil Karakaya" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Asil Karakaya</h3>
+                            <span class="role-badge">TASARIM KAPTANI</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/durutunca.jpeg" alt="Duru Sena Tunca" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Duru Sena Tunca</h3>
+                            <span class="role-badge">MEDYA</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/dtunca.jpeg" alt="Deren Serra Tunca" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Deren Serra Tunca</h3>
+                            <span class="role-badge">SAFETY CAPTAIN</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/aisildak.jpeg" alt="Asya İşildak" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Asya İşildak</h3>
+                            <span class="role-badge">MEDYA</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/ecatal.png" alt="Ecrin Çatal" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Ecrin Çatal</h3>
+                            <span class="role-badge">MEDYA</span>
+                        </div>
+                    </div>
+                     <div class="member-card reveal">
+                        <div class="photo-frame">
+                            <img src="images/zsolmaz.jpeg" alt="Zeynep Rana Solmaz" onerror="this.src='images/default-profile.png'">
+                        </div>
+                        <div class="member-info">
+                            <h3>Zeynep Rana Solmaz</h3>
+                            <span class="role-badge">MEDYA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors" class="section-brute-light">
+            <div class="container">
+                <div class="brute-header center">
+                    <h2 class="section-title" data-tr="DESTEKÇİLERİMİZ" data-en="OUR PARTNERS">DESTEKÇİLERİMİZ</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="partners-grid reveal">
+                    <div class="partner-card platinum">
+                        <div class="partner-logo">
+                            <img src="images/placeholder-sponsor.png" alt="Gebze BİLSEM">
+                        </div>
+                        <div class="partner-meta">
+                            <h3>GEBZE 23 NİSAN BİLSEM</h3>
+                            <span class="p-badge">PLATINUM / KURUCU</span>
+                        </div>
+                    </div>
+
+                    <div class="partner-card gold">
+                        <div class="partner-logo">
+                            <img src="images/placeholder-sponsor.png" alt="Logo Yazılım">
+                        </div>
+                        <div class="partner-meta">
+                            <h3>LOGO YAZILIM</h3>
+                            <span class="p-badge">GOLD SPONSOR</span>
+                        </div>
+                    </div>
+
+                    <div class="partner-card silver">
+                        <div class="partner-logo">
+                            <img src="images/placeholder-sponsor.png" alt="Asill Tekstil">
+                        </div>
+                        <div class="partner-meta">
+                            <h3>ASİLL TEKSTİL</h3>
+                            <span class="p-badge">SILVER SPONSOR</span>
+                        </div>
+                    </div>
+                     <div class="partner-card silver">
+                        <div class="partner-logo">
+                            <img src="images/placeholder-sponsor.png" alt="As.zodia">
+                        </div>
+                        <div class="partner-meta">
+                            <h3>AS.ZODIA TEKSTİL</h3>
+                            <span class="p-badge">SILVER SPONSOR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-contact">
+            <div class="container footer-flex">
+                <div class="f-left">
+                    <h3>THE FLYING CATS</h3>
+                    <p>FRC TEAM #11095</p>
+                    <p class="copyright">&copy; 2026 GEBZE</p>
+                </div>
+                <div class="f-right">
+                    <a href="mailto:contact@flyingcats.team" class="big-mail">CONTACT@FLYINGCATS.TEAM</a>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/theflyingcatsfrc" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
